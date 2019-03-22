@@ -1299,7 +1299,13 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+                
 			}
+
+                    #header .content .inner .image {
+                        float:left;
+                        margin-right: 30px;
+                    }
 
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
