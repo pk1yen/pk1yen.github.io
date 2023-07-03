@@ -2577,7 +2577,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2830,6 +2830,21 @@ input, select, textarea {
 				}
 
 		}
+
+/* New code to make text always visible on mobile */
+@media screen and (max-width: 736px) {
+  .tiles article > .image:before {
+    background-color: #333333;
+    opacity: 0.8;
+  }
+  .tiles article > a {
+    color: #ffffff !important;
+  }
+  .tiles article .content {
+    max-height: 15em;
+    opacity: 1;
+  }
+}
 
 /* Header */
 
