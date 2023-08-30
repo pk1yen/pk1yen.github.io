@@ -2846,7 +2846,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 4em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -2919,8 +2919,8 @@ input, select, textarea {
 
 					#header nav ul li a[href="#menu"] {
 						-webkit-tap-highlight-color: transparent;
-						width: 4em;
-						text-indent: 4em;
+						width: 3em;
+						text-indent: 3em;
 						font-size: 1em;
 						overflow: hidden;
 						padding: 0;
