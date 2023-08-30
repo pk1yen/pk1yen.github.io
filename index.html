@@ -46,7 +46,7 @@
 						<div class="inner">
 							<header>
                                <p>
-  <a href="#" class="image">
+  <br><a href="#" class="image">
     <img src="images/title%20transparent.png" style="width: 60%; height: auto; display: block; margin-left: auto; margin-right: auto;" alt="" />
   </a>
 </p>
@@ -60,7 +60,82 @@
 
 - 2 players<br>
 - Age 10+<br>
-- 20 minutes</p></center>
+- 20 minutes</p><br>
+                
+<div class="quote" style="height: 30px;">
+    <h2><i>"Your quote here</i><br>on two lines"</h2>
+</div>
+
+<style>
+/* Hide the quote initially */
+.quote {
+  opacity: 0;
+}
+
+/* Fade in the quote */
+.quote.fade-in {
+  animation: fade-in 2s forwards;
+}
+
+/* Fade out the quote */
+.quote.fade-out {
+  animation: fade-out 2s forwards;
+}
+
+/* Define the fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Define the fade-out animation */
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+</style>
+
+<script>
+window.onload = function() {
+    const quotes = [
+        "<i>'Beautifully simplified yet strategically complex'</i><br>- Board Game Review",
+        "<i>'One of our favourite games for two players'</i><br>- La Oficina de Juegos",
+        "<i>'The ceramic golems have rocketed into my top five game components of all time'</i><br>- Board Game Review",
+        "<i>'A clever strategy game, and it's versatile too'</i><br>- Boards Eye View"
+    ];
+    const quoteElement = document.querySelector('.quote h2');
+    let index = -1;
+
+    function showNextQuote() {
+        index = (index + 1) % quotes.length;
+        quoteElement.innerHTML = quotes[index];
+        document.querySelector('.quote').classList.remove('fade-out');
+        document.querySelector('.quote').classList.add('fade-in');
+        setTimeout(hideQuote, 3000);
+    }
+
+    function hideQuote() {
+        document.querySelector('.quote').classList.remove('fade-in');
+        document.querySelector('.quote').classList.add('fade-out');
+        setTimeout(showNextQuote, 2000);
+    }
+
+    showNextQuote();
+}
+</script><br>
+
+
+
+</center>
+
 							</header>
 							<section class="tiles">
 								<article class="style5">
